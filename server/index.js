@@ -5,7 +5,7 @@ import { Server } from "socket.io";
 
 const app = express();
 
-app.use(cors({origin:"http://localhost:6000"}));
+app.use(cors({origin:"http://localhost:5173"}));
 
 app.get("/", (req,res) =>{
     res.json ({status:"ok"});
@@ -14,7 +14,7 @@ app.get("/", (req,res) =>{
 const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
-    cors: {origin: "http://localhost:6000"},
+    cors: {origin: "http://localhost:5173"},
 });
 
 io.on("connection", (socket)=> {

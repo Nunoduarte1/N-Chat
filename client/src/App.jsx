@@ -12,5 +12,5 @@ export default function App() {
     };
   }, []);
 
-return <h1>N-Chat</h1>
+++++++++++++++++++++++++++++++++++++++++++return <h1>N-Chat™</h1>
 }
